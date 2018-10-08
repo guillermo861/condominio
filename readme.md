@@ -11,13 +11,10 @@ Este es un proyecto demostrativo de un posible uso de Laravel y Vue de forma nat
 - Laravel
 - Vue
 - MySql
-- Docker (opcional).
 
 ## Instalación
 
-Se recomienda el uso de Docker para agilizar le proceso de instalación.
-
-- Instalar database
+- Instalar mysql
 - Crear schema: example
 - Descargar el repositorio: **(https://github.com/guillermo861/practice-laravel-vue**
 - Ejecutar: php artisan migrate
