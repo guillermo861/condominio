@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PublicationsController@index')->name('home');
+Route::get('/publication/save', 'PublicationsController@save')->name('publicationSave');
