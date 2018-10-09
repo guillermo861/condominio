@@ -8,7 +8,7 @@ use App\State;
 class StatesController extends Controller
 {
     public function index(){
-        $response = State::where('id','>','0')->get()->all();
+        $response = State::all();
         return json_encode($response);
     }
 }

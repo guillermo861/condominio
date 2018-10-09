@@ -8,7 +8,7 @@ use App\Grade;
 class GradesController extends Controller
 {
     public function index(){
-        $response = Grade::where('id','>','0')->get()->all();
+        $response = Grade::all();
         return json_encode($response);
     }
 }

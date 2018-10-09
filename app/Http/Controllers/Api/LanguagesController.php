@@ -8,7 +8,7 @@ use App\Language;
 class LanguagesController extends Controller
 {
     public function index(){
-        $response = Language::where('id','>','0')->get()->all();
+        $response = Language::all();
         return json_encode($response);
     }
 }

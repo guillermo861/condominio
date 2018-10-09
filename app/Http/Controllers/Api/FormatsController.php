@@ -8,7 +8,7 @@ use App\Format;
 class FormatsController extends Controller
 {
     public function index(){
-        $response = Format::where('id','>','0')->get()->all();
+        $response = Format::all();
         return json_encode($response);
     }
 }

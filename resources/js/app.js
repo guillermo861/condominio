@@ -9,6 +9,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import ElementUI from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/es';
+window.Vue.use(ElementUI, {locale});
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -17,9 +21,6 @@ window.Vue = require('vue');
 
 Vue.component('publications', require('./components/publications.vue'));
 Vue.component('publications-form', require('./components/publications-form.vue'));
-
-Vue.component('paginate', require('vuejs-paginate'));
-
 
 const app = new Vue({
     el: '#app'

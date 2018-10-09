@@ -1,65 +1,39 @@
-nav.navbar-findcond {
-  background: #fff;
-  border-color: #ccc;
-  -webkit-box-shadow: 0 0 2px 0 #ccc;
-          box-shadow: 0 0 2px 0 #ccc;
-}
-
-nav.navbar-findcond a {
-  color: #f14444;
-}
-
-nav.navbar-findcond ul.navbar-nav a {
-  color: #f14444;
-  border-style: solid;
-  border-width: 0 0 2px 0;
-  border-color: #fff;
-}
-
-nav.navbar-findcond ul.navbar-nav a:hover {
-  background: #fff;
-  border-color: #f14444;
-}
-
-nav.navbar-findcond ul.navbar-nav a:visited {
-  background: #fff;
-}
-
-nav.navbar-findcond ul.navbar-nav a:focus {
-  background: #fff;
-}
-
-nav.navbar-findcond ul.navbar-nav a:active {
-  background: #fff;
-}
-
-nav.navbar-findcond ul.dropdown-menu > li > a {
-  color: #444;
-}
-
-nav.navbar-findcond ul.dropdown-menu > li > a:hover {
-  background: #f14444;
-  color: #fff;
-}
-
-button[type="submit"] {
-  border-radius: 2px;
-  color: #fff;
-  background: #e74c3c;
-  padding: 10px;
-  font-size: 13px;
-  text-transform: uppercase;
+body {
+  padding: 0;
   margin: 0;
-  font-weight: 400;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  -webkit-transition: background .5s;
-  transition: background .5s;
+  display: block;
 }
 
-button[type="submit"]:hover {
-  background: #2f3c4e;
+.material-icons {
+  color: #fff;
+}
+
+div.header {
+  background: #444;
+  padding: 1em;
+  margin: 0;
+}
+
+div.header .logo i {
+  text-align: center;
+  font-size: 48px;
+}
+
+div.header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+div.content {
+  padding: 10px;
+}
+
+div.content .row {
+  padding: 10px;
+}
+
+div.content form div.row div {
+  padding-left: 0;
+  padding-right: 5px;
 }
 

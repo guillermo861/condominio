@@ -21,13 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  * Use next routes as free microservices
  */
 
-Route::get('formats',                      'Api\FormatsController@index');
-Route::get('grades',                       'Api\GradesController@index');
-Route::get('languages',                    'Api\LanguagesController@index');
 Route::get('publications',                 'Api\PublicationsController@index');
-Route::get('publicationsToStatesGrades',   'Api\PublicationsToStateGradeControllers@index');
-Route::get('states',                       'Api\StatesController@index');
-Route::get('subjects',                     'Api\SubjectsController@index');
-Route::get('scool_years',                  'Api\ScoolYearsController@index');
+Route::get('publications/{id}',                 'Api\PublicationsController@find');
 
 Route::post('publications',                'Api\PublicationsController@post');

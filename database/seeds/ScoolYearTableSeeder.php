@@ -11,8 +11,8 @@ class ScoolYearTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('sucool_years')->insert(['scool_year' => '2018-2019']);
-        DB::table('sucool_years')->insert(['scool_year' => '2019-2020']);
-        DB::table('sucool_years')->insert(['scool_year' => '2020-2021']);
+        DB::table('scool_years')->insert(['scool_year' => '2018-2019']);
+        DB::table('scool_years')->insert(['scool_year' => '2019-2020']);
+        DB::table('scool_years')->insert(['scool_year' => '2020-2021']);
     }
 }

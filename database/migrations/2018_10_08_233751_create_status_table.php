@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSucoolYearsTable extends Migration
+class CreateStatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSucoolYearsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sucool_years', function (Blueprint $table) {
+        Schema::create('status', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('scool_year',10);
+            $table->string('status',25);
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateSucoolYearsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sucool_year');
+        Schema::dropIfExists('status');
     }
 }

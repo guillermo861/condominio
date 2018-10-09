@@ -8,7 +8,7 @@ use App\Publication_to_states_grades as PTSG;
 class PublicationsToStateGradeController extends Controller
 {
     public function index(){
-        $response = PTSG::where('id','>','0')->get()->all();
+        $response = PTSG::all();
         return json_encode($response);
     }
 }

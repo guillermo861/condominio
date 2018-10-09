@@ -8,7 +8,7 @@ use App\Subject;
 class SubjectsController extends Controller
 {
     public function index(){
-        $response = Subject::where('id','>','0')->get()->all();
+        $response = Subject::all();
         return json_encode($response);
     }
 }
