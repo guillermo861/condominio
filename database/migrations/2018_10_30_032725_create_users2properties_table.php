@@ -15,6 +15,8 @@ class CreateUsers2propertiesTable extends Migration
     {
         Schema::create('users2properties', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_user');
+            $table->integer('id_propierty');
             $table->timestamps();
         });
     }

@@ -15,6 +15,14 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('block',50)->nullable();
+            $table->string('street',50)->nullable();
+            $table->string('number',10);
+            $table->integer('parkings');
+            $table->string('dimensions',150);
+            $table->boolean('isHause');
+            $table->boolean('garden');
+            $table->integer('status');
             $table->timestamps();
         });
     }

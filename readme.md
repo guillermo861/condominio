@@ -1,6 +1,6 @@
-<h1 align="center">Practice-laravel-vue</h1>
+<h1 align="center">Condominio</h1>
 
-**(http://practice-laravel-vue.test)**
+**(http://condominio.test)**
 
 ## Descripción
 
@@ -16,7 +16,7 @@ Este es un proyecto demostrativo de un posible uso de Laravel y Vue de forma nat
 
 - Instalar mysql
 - Crear schema: example
-- Descargar el repositorio: **(https://github.com/guillermo861/practice-laravel-vue**
+- Descargar el repositorio: **(https://github.com/guillermo861/condominio**
 - Ejecutar: php artisan migrate
 - Ejecutar: php artisan db:seed
 - Ejecutar: npm install

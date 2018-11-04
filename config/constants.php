@@ -11,4 +11,18 @@ return [
             'inactive' => ['value' => false, 'string' => 'Inactivo']
         ]
     ],
+    'status' => [
+        1 => [
+            'id' => 1,
+            'key' => 'activo',
+        ],
+        2 => [
+            'id' => 2,
+            'key' => 'inactivo',
+        ],
+        3 => [
+            'id' => 3,
+            'key' => 'eliminado'
+        ]
+    ]
 ];
