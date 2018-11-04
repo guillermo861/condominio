@@ -9,10 +9,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import ElementUI from 'element-ui';
-import locale from 'element-ui/lib/locale/lang/es';
-
-window.Vue.use(ElementUI, {locale});
+//import ElementUI from 'element-ui';
+//import locale from 'element-ui/lib/locale/lang/es';
+//window.Vue.use(ElementUI, {locale});
+//const app = new Vue({el: '#app'});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,9 +20,36 @@ window.Vue.use(ElementUI, {locale});
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('publications', require('./components/publications.vue'));
-Vue.component('publications-form', require('./components/publications-form.vue'));
+import VueRouter from 'vue-router';
 
-const app = new Vue({
-    el: '#app'
-});
+window.Vue.use( VueRouter);
+
+import PropertiesIndex  from './components/properties/PropertiesIndex.vue';
+import PropertiesCreate from './components/properties/PropertiesCreate.vue';
+import PropertiesEdit   from './components/properties/PropertiesEdit.vue';
+
+
+const routes = [
+    {
+        path: '/',
+        components: {
+            propertiesIndex : PropertiesIndex
+        }
+    },
+    {
+        path: '/properties/create',
+        components:{
+            propertiesCreate: PropertiesCreate
+        }
+    },
+    {
+        path: '/properties/edit',
+        components:{
+            propertiesEdit: PropertiesEdit
+        }
+    }
+]
+
+const router = new VueRouter({routes})
+
+const app = new Vue({router}).$mount('#app')
