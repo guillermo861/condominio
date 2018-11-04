@@ -11,10 +11,8 @@
 |
 */
 
-//Route::get('/', 'PublicationsController@index')->name('home');
-Auth::routes();
-
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/login', 'HomeController@index')->name('home');
 
-//$router->group(['middleware' => ['auth:api', 'logger', 'throttle']], function () use ($router) {
+
+Auth::routes();

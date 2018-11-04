@@ -11,6 +11,7 @@ window.Vue = require('vue');
 
 import ElementUI from 'element-ui';
 import locale from 'element-ui/lib/locale/lang/es';
+
 window.Vue.use(ElementUI, {locale});
 
 /**

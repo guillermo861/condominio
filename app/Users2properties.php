@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class pets extends Model
+class users2Properties extends Model
 {
     //
 }

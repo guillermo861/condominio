@@ -17,11 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-/*
- * Use next routes as free microservices
- */
-
-Route::get('publications',                 'Api\PublicationsController@index');
-Route::get('publications/{id}',                 'Api\PublicationsController@find');
-
-Route::post('publications',                'Api\PublicationsController@post');
+Route::group(['prefix' => 'v1', 'namespace' => 'Api/V1', 'as'=>'api'],function(){
+    Route::resource('cars','CarsController', ['except' => ['create','edit']]);
+    Route::resource('payments','PaymentsController', ['except' => ['create','edit']]);
+    Route::resource('pets','PetsController', ['except' => ['create','edit']]);
+    Route::resource('properties','PropertiesController', ['except' => ['create','edit']]);
+    Route::resource('residents','ResidentsController', ['except' => ['create','edit']]);
+});

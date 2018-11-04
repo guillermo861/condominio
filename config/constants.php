@@ -12,17 +12,31 @@ return [
         ]
     ],
     'status' => [
-        1 => [
+        [
             'id' => 1,
             'key' => 'activo',
         ],
-        2 => [
+        [
             'id' => 2,
             'key' => 'inactivo',
         ],
-        3 => [
+        [
             'id' => 3,
             'key' => 'eliminado'
         ]
+    ],
+    'payment_concepts' => [
+        [
+            'id' => 1,
+            'key' => 'Cuota Mensual'
+        ],
+        [
+            'id' => 2,
+            'key' => 'Aportacion Especial'
+        ],
+        [
+            'id' => 3,
+            'key' => 'Multa'
+        ],
     ]
 ];
