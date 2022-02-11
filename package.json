@@ -20,7 +20,7 @@
         "vue": "^2.6.10"
     },
     "dependencies": {
-        "ajv": "^6.10.2",
+        "ajv": "^6.12.3",
         "element-ui": "^2.4.8",
         "install-peerdeps": "^1.9.0",
         "material-design-icons": "^3.0.1",
